@@ -6,4 +6,4 @@ Disallow: /assets/css/
 Disallow: /assets/js/
 
 # Location of your XML Sitemap
-Sitemap: https://www.apexlawfirm.com/sitemap.xml
+Sitemap: https://vizio-community.github.io/Web-Design-Assignment/
