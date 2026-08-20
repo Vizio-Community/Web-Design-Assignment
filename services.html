@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our full spectrum of legal services, including Corporate Law, IP Protection, Real Estate, and Civil Litigation.">
+    <title>Our Services | Apex Law Firm</title>
+
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="navbar">
+        <div class="logo">Apex Law Firm</div>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="landing.html">Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Comprehensive Legal Services</h1>
+        <p>Tailored solutions built around client-focused strategies.</p>
+    </section>
+
+    <!-- IMAGE SLIDER CAROUSEL SECTION -->
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="Corporate Strategy Meeting">
+                    <div class="slide-caption">Strategic Corporate Planning</div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80" alt="Legal Contract Signing">
+                    <div class="slide-caption">Contract & IP Asset Protection</div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Commercial Real Estate Architecture">
+                    <div class="slide-caption">Commercial Real Estate Guidance</div>
+                </div>
+            </div>
+            
+            <button class="slider-btn prev-btn" id="prevSlide" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn" id="nextSlide" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+            
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID WITH SCROLL ANIMATIONS -->
+    <main class="services-container">
+        <article class="service-box scroll-reveal">
+            <div class="service-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <h2>Corporate Law</h2>
+            <p>Assisting corporations with formation, governance, contract drafting, and M&A strategies.</p>
+            <button class="btn-service-inquire" data-service="Corporate Law">Inquire Now</button>
+        </article>
+
+        <article class="service-box scroll-reveal">
+            <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h2>Intellectual Property</h2>
+            <p>Safeguarding innovations, filing patents, securing trademarks, and handling copyright disputes.</p>
+            <button class="btn-service-inquire" data-service="Intellectual Property">Inquire Now</button>
+        </article>
+
+        <article class="service-box scroll-reveal">
+            <div class="service-icon"><i class="fa-solid fa-city"></i></div>
+            <h2>Commercial Real Estate</h2>
+            <p>Advising developers and businesses on land acquisitions, commercial leasing, and zoning laws.</p>
+            <button class="btn-service-inquire" data-service="Commercial Real Estate">Inquire Now</button>
+        </article>
+
+        <article class="service-box scroll-reveal">
+            <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h2>Employment & Labor</h2>
+            <p>Guiding companies through labor compliance, employee contracts, and dispute resolutions.</p>
+            <button class="btn-service-inquire" data-service="Employment & Labor">Inquire Now</button>
+        </article>
+    </main>
+
+    <!-- INQUIRY MODAL POPUP -->
+    <div class="modal-overlay" id="inquiryModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeModal" aria-label="Close Modal">&times;</button>
+            <h3 id="modalTitle">Inquire About Legal Services</h3>
+            <p class="modal-subtitle">Submit your details below and an attorney will follow up directly.</p>
+
+            <form id="modalForm" novalidate>
+                <input type="hidden" id="selectedService" name="service">
+
+                <div class="form-group">
+                    <label for="modalName">Full Name *</label>
+                    <input type="text" id="modalName" placeholder="John Smith" required>
+                    <div class="error-message" id="modalNameError">Please enter your name.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="modalEmail">Email Address *</label>
+                    <input type="email" id="modalEmail" placeholder="john@example.com" required>
+                    <div class="error-message" id="modalEmailError">Please enter a valid email.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="modalMessage">Inquiry Details</label>
+                    <textarea id="modalMessage" rows="3" maxlength="200" placeholder="Briefly describe your request..."></textarea>
+                    <div class="char-counter"><span id="modalCharCount">0</span>/200 characters</div>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- EXPANDED FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">Apex Law Firm</div>
+                <p>Providing straightforward, client-focused legal advisory services to scale-ups, established businesses, and private clients.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Practice Areas</a></li>
+                    <li><a href="landing.html"><i class="fa-solid fa-chevron-right"></i> Consultations</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Practice Areas</h4>
+                <ul>
+                    <li><a href="services.html#corporate"><i class="fa-solid fa-chevron-right"></i> Corporate Law</a></li>
+                    <li><a href="services.html#ip"><i class="fa-solid fa-chevron-right"></i> Intellectual Property</a></li>
+                    <li><a href="services.html#real-estate"><i class="fa-solid fa-chevron-right"></i> Commercial Real Estate</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Get In Touch</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 100 Legal Plaza, Suite 400, New York, NY 10001</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (800) 555-0199</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@apexlaw.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="bottom-container">
+                <p>&copy; 2026 Apex Law Firm. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Central JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

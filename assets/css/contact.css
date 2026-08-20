@@ -1,0 +1,134 @@
+/* ==========================================================================
+   CONTACT PAGE STYLES
+   ========================================================================== */
+.page-header {
+  background-color: var(--light-blue);
+  padding: 4rem 5%;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: #475569;
+}
+
+.contact-layout {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+}
+
+.contact-form-container h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+
+.char-counter {
+  font-size: 0.8rem;
+  color: #64748b;
+  text-align: right;
+  margin-top: 0.3rem;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 0.85rem;
+  display: none;
+  margin-top: 0.3rem;
+}
+
+.btn-submit {
+  background-color: var(--accent-blue);
+  color: var(--white);
+  padding: 0.95rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--hover-blue);
+}
+
+/* Info Panel Styling */
+.info-panel {
+  background: var(--light-blue);
+  padding: 2.25rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.info-panel h3 {
+  color: var(--primary-blue);
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.info-panel .hours-title {
+  margin-top: 2rem;
+}
+
+.contact-details {
+  list-style: none;
+}
+
+.contact-details li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-details i {
+  color: var(--accent-blue);
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.contact-details strong {
+  display: block;
+  color: var(--primary-blue);
+}
+
+.business-hours {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.business-hours li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed var(--border-color);
+  font-size: 0.95rem;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Responsive Layout */
+@media (max-width: 992px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

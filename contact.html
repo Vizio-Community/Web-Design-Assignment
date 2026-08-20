@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Contact Us | Apex Law Firm | Schedule a Free Consultation</title>
+    <meta name="description" content="Contact Apex Law Firm today to schedule a consultation. Call, email, or visit our office — our attorneys are ready to discuss your legal needs.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Apex Law Firm">
+    <link rel="canonical" href="https://www.apexlawfirm.com/contact">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Apex Law Firm">
+    <meta property="og:title" content="Contact Us | Apex Law Firm">
+    <meta property="og:description" content="Schedule a consultation or reach out to Apex Law Firm for trusted legal support.">
+    <meta property="og:url" content="https://www.apexlawfirm.com/contact">
+    <meta property="og:image" content="https://www.apexlawfirm.com/assets/img/og-contact.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us | Apex Law Firm">
+    <meta name="twitter:description" content="Schedule a consultation or reach out to Apex Law Firm for trusted legal support.">
+    <meta name="twitter:image" content="https://www.apexlawfirm.com/assets/img/og-contact.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+
+    <!-- Performance: preconnect to third-party origins -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+    <!-- Structured Data: LegalService + ContactPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Apex Law Firm",
+      "url": "https://www.apexlawfirm.com",
+      "logo": "https://www.apexlawfirm.com/assets/img/logo.png",
+      "image": "https://www.apexlawfirm.com/assets/img/og-contact.jpg",
+      "telephone": "+1-555-555-5555",
+      "email": "contact@apexlawfirm.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street, Suite 400",
+        "addressLocality": "City",
+        "addressRegion": "State",
+        "postalCode": "00000",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/apexlawfirm",
+        "https://www.linkedin.com/company/apexlawfirm"
+      ]
+    }
+    </script>
+</head>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="navbar">
+        <div class="logo">Apex Law Firm</div>
+        
+        <!-- Mobile Hamburger Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="landing.html">Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our team for professional, confidential legal guidance.</p>
+    </section>
+
+    <!-- CONTACT LAYOUT SECTION -->
+    <main class="contact-layout">
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Jane Doe" required>
+                    <div class="error-message" id="nameError">Please enter your full name.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="jane@example.com" required>
+                    <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" maxlength="250" placeholder="How can our legal team help you?" required></textarea>
+                    <div class="char-counter"><span id="charCount">0</span>/250 characters</div>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Information & Map Panel -->
+        <section class="info-panel">
+            <h3>Office Information</h3>
+            <ul class="contact-details">
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Address</strong>
+                        <p>100 Legal Plaza, Suite 400, New York, NY 10001</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+1 (800) 555-0199</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <p>contact@apexlaw.com</p>
+                    </div>
+                </li>
+            </ul>
+
+            <h3 class="hours-title">Business Hours</h3>
+            <ul class="business-hours">
+                <li><span>Monday – Friday:</span> <span>8:00 AM – 5:00 PM</span></li>
+                <li><span>Saturday:</span> <span>By Appointment Only</span></li>
+                <li><span>Sunday:</span> <span>Closed</span></li>
+            </ul>
+
+            <!-- Interactive Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.21833132717!2d-73.98785842342369!3d40.75100033484251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="200" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- EXPANDED FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">Apex Law Firm</div>
+                <p>Providing straightforward, client-focused legal advisory services to scale-ups, established businesses, and private clients.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Practice Areas</a></li>
+                    <li><a href="landing.html"><i class="fa-solid fa-chevron-right"></i> Consultations</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Practice Areas</h4>
+                <ul>
+                    <li><a href="services.html#corporate"><i class="fa-solid fa-chevron-right"></i> Corporate Law</a></li>
+                    <li><a href="services.html#ip"><i class="fa-solid fa-chevron-right"></i> Intellectual Property</a></li>
+                    <li><a href="services.html#real-estate"><i class="fa-solid fa-chevron-right"></i> Commercial Real Estate</a></li>
+                    <li><a href="services.html#litigation"><i class="fa-solid fa-chevron-right"></i> Dispute Resolution</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Get In Touch</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 100 Legal Plaza, Suite 400, New York, NY 10001</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (800) 555-0199</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@apexlaw.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="bottom-container">
+                <p>&copy; 2026 Apex Law Firm. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Script Link -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

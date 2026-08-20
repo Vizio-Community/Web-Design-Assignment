@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow access to private or administrative directories if applicable
+Disallow: /assets/css/
+Disallow: /assets/js/
+
+# Location of your XML Sitemap
+Sitemap: https://www.apexlawfirm.com/sitemap.xml

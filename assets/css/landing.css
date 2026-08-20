@@ -1,0 +1,295 @@
+/* ==========================================================================
+   LANDING PAGE & LEAD GEN STYLES
+   ========================================================================== */
+.navbar-landing .phone-link {
+  color: var(--primary-blue);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.landing-hero {
+  background: linear-gradient(180deg, var(--light-blue) 0%, var(--white) 100%);
+  padding: 4rem 5%;
+}
+
+.landing-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.badge {
+  display: inline-block;
+  background-color: rgba(0, 115, 236, 0.1);
+  color: var(--accent-blue);
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.landing-text h1 {
+  font-size: 2.75rem;
+  color: var(--primary-blue);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.landing-text .subtitle {
+  font-size: 1.15rem;
+  color: #475569;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.benefit-item i {
+  color: var(--accent-blue);
+  font-size: 1.35rem;
+  margin-top: 0.2rem;
+}
+
+.benefit-item strong {
+  display: block;
+  color: var(--primary-blue);
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.benefit-item p {
+  color: #64748B;
+  font-size: 0.95rem;
+}
+
+.landing-image-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(10, 37, 64, 0.08);
+}
+
+.landing-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Lead Card & Select Dropdown Styling */
+.lead-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.lead-card h2 {
+  color: var(--primary-blue);
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.lead-card p {
+  color: #64748B;
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--white);
+  color: var(--dark-gray);
+  transition: border-color 0.2s ease;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(0, 115, 236, 0.15);
+}
+
+.btn-lead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  padding: 1rem;
+}
+
+.form-disclaimer {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #94A3B8;
+  margin-top: 1rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 992px) {
+  .landing-grid {
+    grid-template-columns: 1fr;
+  }
+  .landing-text h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* ==========================================================================
+   HIGH-CONVERTING LEAD FORM REDESIGN
+   ========================================================================== */
+.highlight-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 20px 40px rgba(10, 37, 64, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top Accent Accentuate Line */
+.highlight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, var(--accent-blue), #38BDF8);
+}
+
+.urgency-tag {
+  display: inline-block;
+  background-color: #FEF3C7;
+  color: #D97706;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.card-header h2 {
+  color: var(--primary-blue);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.card-header p {
+  color: #64748B;
+  font-size: 0.92rem;
+}
+
+/* Social Proof Bar Inside Form */
+.form-trust-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-blue);
+  padding: 0.6rem 0.85rem;
+  border-radius: 6px;
+  margin: 1.25rem 0 1.5rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+}
+
+.form-trust-bar i {
+  color: #F59E0B;
+}
+
+/* Form Input Icons */
+.input-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon-wrapper i {
+  position: absolute;
+  left: 1rem;
+  color: #94A3B8;
+  font-size: 0.95rem;
+  pointer-events: none;
+  transition: color 0.2s ease;
+}
+
+.input-icon-wrapper input,
+.input-icon-wrapper select {
+  width: 100%;
+  padding: 0.85rem 0.85rem 0.85rem 2.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: #FAFAFA;
+  transition: all 0.2s ease;
+}
+
+/* Focused State Feedback */
+.input-icon-wrapper input:focus,
+.input-icon-wrapper select:focus {
+  outline: none;
+  background-color: var(--white);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 4px rgba(0, 115, 236, 0.12);
+}
+
+.input-icon-wrapper input:focus + i,
+.input-icon-wrapper select:focus + i {
+  color: var(--accent-blue);
+}
+
+/* High Visibility Glow Button */
+.btn-glow {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--hover-blue) 100%);
+  color: var(--white);
+  padding: 1.1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 115, 236, 0.35);
+  transition: all 0.25 ease;
+}
+
+.btn-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 115, 236, 0.45);
+}
+
+.guarantee-text {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #64748B;
+  margin-top: 1rem;
+}
+
+.guarantee-text i {
+  color: #10B981;
+}
